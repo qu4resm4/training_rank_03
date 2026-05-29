@@ -9,9 +9,11 @@ from functools import cmp_to_key
 def cryptic_sorter(strings: list[str]) -> list[str]:
 
     def conferir_ascii(string1: str, string2: str) -> int:
+        # PRIMEIRO ORDENANDO PELO TAMANHO (quantidade de caracteres)
         if len(string1) != len(string2):
             return len(string1) - len(string2)
         else:
+            # SEGUNDO, comparando por ascii ignorando case
             for index in range(0, len(string1)):
                 if string1[index].upper() != string2[index].upper():
                     return (
