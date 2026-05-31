@@ -12,7 +12,7 @@ def cryptic_sorter(strings: list[str]) -> list[str]:
         # PRIMEIRO ORDENANDO PELO TAMANHO (quantidade de caracteres)
         if len(string1) != len(string2):
             return len(string1) - len(string2)
-        else:
+        elif():
             # SEGUNDO, comparando por ascii ignorando case
             for index in range(0, len(string1)):
                 if string1[index].upper() != string2[index].upper():
@@ -30,7 +30,7 @@ result = cryptic_sorter(["apple", "cat", "banana", "dog", "elephant"])
 print(result)
 
 
-result = cryptic_sorter(["aaa", "bbb", "AAA", "BBB"])
+result = cryptic_sorter(["aad", "aae", "bbb", "AAA", "BBB"])
 print(result)
 
 
